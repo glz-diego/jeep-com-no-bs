@@ -1,0 +1,58 @@
+
+body{
+	background-image: url(Jeep2.jpg);
+	background-size: cover;
+	display: flex;
+}
+nav{
+	width: 100%;
+	background-color: black;
+	display: flex;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ul{
+	float: left;
+}
+nav ul li{
+	float: left;
+	list-style: none;
+	position: relative;
+}
+nav ul li:hover{
+	background-color: #f3f3f3;
+}
+nav ul li a{
+	display: block;
+	font-family: arial;
+	color: #222;
+	font-size: 150%;
+	padding: 22px 14px;
+	text-decoration: none;
+}
+nav ul li ul{
+	display: none;
+	position: absolute;
+	background-color: white;
+	padding: 10px;
+	border-radius: 0px 0px 4px 4px;
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav ul li ul li{
+	width: 250px;
+	border-radius: 4px;
+}
+nav ul li ul li a{
+	padding: 8px 14px;
+}
+nav ul li ul li a:hover{
+	background-color: blue;
+}
+#logo{
+	padding: 20px;
+}
