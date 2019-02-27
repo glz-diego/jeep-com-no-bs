@@ -6,9 +6,9 @@
 </head>
 <body>
 	<nav>
-		<img id="logo" src="logo-jeep.png">
+		<img id="logo" src="img/logo-jeep.png">
 		<ul>
-			<li><a href="#"><font style=" text-decoration: none; color: white;"><strong>VEHICLES ▼</strong></font></a>
+			<li><a href="#"><font style=" text-decoration: none; color: white;"><strong>VEHICLES </strong><div id="sr">▼</div></font></a>
 				<ul>
 					<li><strong>STANDARD MODELS</strong></li>
 					<li><a href="https://www.jeep.com/wrangler.html">ALL-NEW WRANGLER</a></li>
@@ -24,7 +24,21 @@
 					<li><a href="https://www.jeep.com/limited-editions/2018/wrangler/moab.html">WRANGLER</a></li>
 				</ul>
 			</li>
-			<li><a href="#"><font style=" text-decoration: none; color: white;"><strong>MENU</strong></font></a></li>
+			<li class="li" style="display: flex"></font><div class="container" onclick="myFunction(this)"><a href="#"><font style=" text-decoration: none; color: white;"><strong>MENU</strong>
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+			</div><script>function myFunction(x) {x.classList.toggle("change");}</script></a>
+				<ul>
+					<li><a href="">BUILD & PRICE</a></li>
+					<li><a href="">FIND A DEALER</a></li>
+					<li><a href="">SHOPPING TOOLS</a></li>
+					<li><a href="">CAPABILITY</a></li>
+					<li><a href="">JEEP LIFE</a></li>
+					<li><a href="">OWNERS</a></li>
+					<li><a href="">MERCHANDISE</a></li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
 </body>
