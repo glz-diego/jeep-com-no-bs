@@ -32,21 +32,13 @@ nav ul li:hover{
 nav ul li a{
 	display: block;
 	font-family: arial;
+	color: black;
 	font-size: 200%;
 	padding: 22px 14px 22px 14px;
 	text-decoration: none;
 }
-.black{
-	text-decoration-color: black;
-}
-.white{
-	text-decoration-color: white;
-}
-.white:hover{
-	text-decoration-color: black;
-}
-.white{
-	text-decoration-color: white
+#white{
+	/*color: white*/
 }
 nav ul li ul{
 	display: none;
@@ -94,8 +86,7 @@ nav ul li ul li a:hover{
 }
 .li{
 	flex-wrap: wrap;
-	align-items: center;/*
-	text-decoration-color: black;*/
+	align-items: center;
 }
 .container:active{
 	color: black;
@@ -130,4 +121,3 @@ nav div ul li:hover {
 #sr{
 	display: flex;
 }
-.menu
