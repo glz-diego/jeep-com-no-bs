@@ -1,8 +1,6 @@
 body{
-	background-image: url(img/Jeep2.jpg);
-	background-size: cover;
 	display: flex;
-	background-repeat: no-repeat;
+	background-color: rgb(#222222);
 }
 nav{
 	width: 100%;
@@ -13,6 +11,7 @@ nav{
 	left: 0px;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 5;
 }
 nav ul{
 	display: flex;
@@ -120,4 +119,51 @@ nav div ul li:hover {
 }
 #sr{
 	display: flex;
+}
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -105%;
+	}
+	45%{
+		left: -105%;
+	}
+	50%{
+		left: -205%;
+	}
+	70%{
+		left: -205%;
+	}
+	75%{
+		left: -305%;
+	}
+	95%{
+		left: -305%;
+	}
+	100%{
+		left: -405%;
+	}
+}
+	#slider{
+		z-index: 1;
+		overflow: hidden;
+	}
+	#slider figure img{
+		width: 100vw;
+		float: left;
+	}
+	#slider figure{
+		position: relative;
+		width: 500%;
+		margin: 0;
+		left: 0;
+		text-align: left;
+		font-size: 0;
+		animation: 40s slider infinite;
+	}
 }
