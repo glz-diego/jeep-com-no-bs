@@ -35,9 +35,7 @@ nav ul li a{
 	font-size: 200%;
 	padding: 22px 14px 22px 14px;
 	text-decoration: none;
-}
-#white{
-	/*color: white*/
+	width: 200px;
 }
 nav ul li ul{
 	display: none;
@@ -86,33 +84,7 @@ nav ul li ul li a:hover{
 .li{
 	flex-wrap: wrap;
 	align-items: center;
-}
-.container:active{
-	color: black;
-}
-.bar1, .bar2, .bar3 {
-	width: 35px;
-	height: 5px;
-	background-color: white;
-	margin: 6px 0;
-	transition: 0.4s;
-}
-.bar:hover, .bar2:hover, .bar3:hover{
-	background-color: black;
-}
-nav div ul li:hover {
-	background-color: white;
-	text-decoration-color: black;
-}
-.change .bar1 {
-	transform: rotate(-45deg) translate(-9px, 6px);
-}
-.change .bar2 {
-	opacity: 0;
-}
-.change .bar3 {
-	transform: rotate(45deg) translate(-8px, -8px);
-}
+	}
 #sr:hover{
 	transform: rotate(180deg);
 	color: black;
@@ -128,42 +100,80 @@ nav div ul li:hover {
 		left: 0;
 	}
 	25%{
-		left: -105%;
+		left: -104%;
 	}
 	45%{
-		left: -105%;
+		left: -104%;
 	}
 	50%{
-		left: -205%;
+		left: -204%;
 	}
 	70%{
-		left: -205%;
+		left: -204%;
 	}
 	75%{
-		left: -305%;
+		left: -304%;
 	}
 	95%{
-		left: -305%;
+		left: -304%;
 	}
 	100%{
-		left: -405%;
+		left: -404%;
 	}
 }
-	#slider{
-		z-index: 1;
-		overflow: hidden;
-	}
-	#slider figure img{
-		width: 100vw;
-		float: left;
-	}
-	#slider figure{
-		position: relative;
-		width: 500%;
-		margin: 0;
-		left: 0;
-		text-align: left;
-		font-size: 0;
-		animation: 40s slider infinite;
-	}
+#slider{
+	z-index: 1;
+	overflow: hidden;
+}
+#slider figure div img{
+	width: 100vw;
+	float: left;
+}
+#slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 10s slider infinite;
+}
+nav figure div div{
+	width: 80%;
+}
+.jmtl{
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	z-index: 2;
+}
+.nav-text{
+	color:white;
+}
+.nav-text:hover{
+	color:black;
+}
+.bars-icon{
+	display: block;
+}
+.bars-icon:hover{
+	display: none;
+}
+.x-icon{
+	display: none;
+}
+.x-icon:hover{
+	display: block;
+}
+.arrow-down{
+	display: block;
+}
+.arrow-down:hover{
+	display: none;
+}
+.arrow-up{
+	display: none;
+}
+.arrow-up:hover{
+	display: block;
 }

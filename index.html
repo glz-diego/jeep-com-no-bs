@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -10,10 +11,10 @@
 			<img id="logo" src="img/logo-jeep.png">
 		</div>
 		<div>
-			<ul>
-				<li class="li"><a href="#"><font style="text-decoration: none;"><strong>VEHICLES </strong><div id="sr">▼</div></font></a>
+			<ul style="display: flex">
+				<li class="li"><a href="#"><font style="text-decoration: none;"><strong class="nav-text">VEHICLES <i class="fas fa-angle-down arrow-down"></i><i class="fas fa-angle-up arrow-up"></i></strong></font></a>
 					<ul class="black">
-						<li><strong>STANDARD MODELS</strong></li>
+						<li><strong class="nav-text">STANDARD MODELS</strong></li>
 						<li><a href="https://www.jeep.com/wrangler.html">ALL-NEW WRANGLER</a></li>
 						<li><a href="https://www.jeep.com/grand-cherokee.html">GRAND CHEROKEE</a></li>
 						<li><a href="https://www.jeep.com/cherokee.html">CHEROKEE</a></li>
@@ -27,13 +28,7 @@
 						<li><a href="https://www.jeep.com/limited-editions/2018/wrangler/moab.html">WRANGLER</a></li>
 					</ul>
 				</li>
-				<li class="li" style="display: flex"><div class="container" onclick="myFunction(this)"><a href="#"><font style=" text-decoration: none;"><strong>MENU</strong></font>
-						<div id="bars">
-							<div class="bar1"></div>
-							<div class="bar2"></div>
-							<div class="bar3"></div>
-						</div>
-				</div><script>function myFunction(x) {x.classList.toggle("change");}</script></a>
+				<li class="li" style="display: flex"><a href="#"><font style=" text-decoration: none;"><strong class="nav-text">MENU <i class="fas fa-bars bars-icon"></i> <i class="fas fa-times x-icon"></i> </strong></font>
 					<ul>
 						<li><a href="">BUILD & PRICE</a></li>
 						<li><a href="">FIND A DEALER</a></li>
@@ -51,7 +46,10 @@
 		<figure>
 			<div>
 				<img src="img/Jeep2.jpg">
-				<img src="Jeep_MotorTrend_Logo.png">
+				<div>
+					<img class="jmtl" src="img/Jeep_MotorTrend_Logo.png">
+					<p style="color: black">Now get the award-winning 2019 Jeep Wrangler Sport for $299/month for 48 months</p>
+				</div>
 			</div>
 			<div>
 				<img src="img/Jeep3.jpg">
@@ -64,6 +62,32 @@
 			</div>
 		</figure>
 	</div>
+	<!-- <div style="background-color: white; flex-wrap: wrap; justify-content: space-around;">
+		<h3>JEEP® VEHICLES</h3>
+			<img src="">
+				ALL-NEW WRANGLER
+				MSRP* STARTING AT
+				$27,945
+			<img src="">
+				GRAND CHEROKEE
+				MSRP* STARTING AT
+				$31,945
+			<img src="">
+				CHEROKEE
+				MSRP* STARTING AT
+				$25,240
+			<img src="">
+				COMPASS
+				MSRP* STARTING AT
+				$21,845
+			<img src="">
+				RENEGADE
+				MSRP* STARTING AT
+				$18,750
+			<img src="">
+				ALL-NEW GLADIATOR
+				COMING SPRING 2019
+	</div> -->
 
 </body>
 </html>
