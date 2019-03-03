@@ -1,9 +1,10 @@
 body{
 	display: flex;
 	background-color: rgb(#222222);
+	font-family: arial;
 }
 nav{
-	width: 100%;
+	width: 100.8%;
 	background-color: black;
 	display: flex;
 	position: absolute;
@@ -30,7 +31,6 @@ nav ul li:hover{
 }
 nav ul li a{
 	display: block;
-	font-family: arial;
 	color: black;
 	font-size: 200%;
 	padding: 22px 14px 22px 14px;
@@ -43,11 +43,18 @@ nav ul li ul{
 	padding: 10px;
 	border-radius: 0px 0px 4px 4px;
 }
-nav ul li:hover ul{
+.r:hover ul{
 	display: block;
 	background-color: white;
 	position: absolute;
 	right: 0px;
+	top: 100%;
+}
+.nr:hover ul{
+	display: block;
+	background-color: white;
+	position: absolute;
+	right: -228px;
 	top: 100%;
 }
 nav ul li ul li{
@@ -68,7 +75,7 @@ nav ul li ul li a:hover{
 	align-self: center;
 }
 #logo{
-	padding: 20px;
+	padding: 25px;
 }
 .dn{
 	display: flex;
@@ -141,39 +148,51 @@ nav ul li ul li a:hover{
 nav figure div div{
 	width: 80%;
 }
+nav div ul li ul li a{
+	width: 100vw;
+	padding-left: 20px;
+	size: 
+}
 .jmtl{
 	position: absolute;
 	top: 200px;
-	left: 175px;
+	left: 25%;
 	z-index: 2;
+	flex-wrap: nowrap;
 }
 .nav-text{
 	color:white;
 }
-.nav-text:hover{
+.li:hover .nav-text{
 	color:black;
 }
-.bars-icon{
+.li .bars-icon{
 	display: block;
 }
-.bars-icon:hover{
+.li:hover .bars-icon{
 	display: none;
 }
-.x-icon{
+.li .x-icon{
 	display: none;
 }
-.x-icon:hover{
+.li:hover .x-icon{
 	display: block;
 }
-.arrow-down{
+.li .arrow-down{
 	display: block;
 }
-.arrow-down:hover{
+.li:hover .arrow-down{
 	display: none;
 }
-.arrow-up{
+.li .arrow-up{
 	display: none;
 }
-.arrow-up:hover{
+.li:hover .arrow-up{
 	display: block;
+}
+h3{
+	font-size: 50px;
+}
+h4{
+	font-size: 40px;
 }
