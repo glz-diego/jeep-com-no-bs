@@ -64,6 +64,10 @@ nav ul li ul li{
 	left: 10px;
 	border-radius: 4px;
 }
+nav ul li ul li div{
+	flex-wrap: wrap;
+	border-bottom: 1px solid gray;
+}
 nav ul li ul li a{
 	padding: 8px 14px 8px 14px;
 
@@ -92,13 +96,6 @@ nav ul li ul li a:hover{
 	flex-wrap: wrap;
 	align-items: center;
 	}
-#sr:hover{
-	transform: rotate(180deg);
-	color: black;
-}
-#sr{
-	display: flex;
-}
 @keyframes slider{
 	0%{
 		left: 0;
@@ -158,7 +155,6 @@ nav div ul li ul li a{
 	top: 200px;
 	left: 25%;
 	z-index: 2;
-	flex-wrap: nowrap;
 }
 .nav-text{
 	color:white;
@@ -195,4 +191,15 @@ h3{
 }
 h4{
 	font-size: 40px;
+}
+#jv{
+	position: absolute;top: 1600px;
+	z-index: 2;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	display: flex;
+}
+.jvimg{
+	width: 200px;
 }
